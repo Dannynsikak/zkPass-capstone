@@ -1,5 +1,5 @@
 import './App.css'
-import { type FormEvent, useEffect, useState } from "react";
+import { type FormEvent,  useState } from "react";
 import "./App.css";
 import TransgateConnect from "@zkpass/transgate-js-sdk";
 import type { Result } from "@zkpass/transgate-js-sdk/lib/types";
@@ -11,8 +11,8 @@ export type TransgateError = {
 }
 
 const App = () => {
-	const [appId, setAppId] = useState<string>("8b0c0a07-4218-41a0-9b19-3fabdfc8792f");
-	const [schemaId, setSchemaId] = useState<string>("8bba37870f854bc2bd67e6ad4f910373");
+	const [appId, setAppId] = useState<string>("dcc0c829-8ae4-4d1c-99c4-c1c69767b4f4");
+	const [schemaId, setSchemaId] = useState<string>("4b55a2ff77594e309ccd0a9009309e9b");
 	const [result, setResult] = useState<Result | undefined>(undefined);
 
   const requestVerifyMessage = async (
